@@ -32,4 +32,4 @@ export default {
 
 -Components: https://www.figma.com/file/CSpjclGoIEdMBT8Q56AfsA/Untitled?type=design&node-id=0%3A1&mode=design&t=bg7KohmlJT0PZNlb-1
 
--COMMAND FOR INITIALIZE: go to the root of the project and run 'npm run dev'
+-COMMAND FOR INITIALIZE: Run the commands in the rais folder "npm run back" and "npm run front"
