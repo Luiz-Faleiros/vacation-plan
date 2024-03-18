@@ -99,7 +99,7 @@ function Create() {
 
       // Redirect to home on successful creation
       if (response.status === 200) {
-        window.location.href = '/home';
+        window.location.href = '/';
       }
     } catch (error) {
       console.error("Error occurred while creating vacation plan:", error);
@@ -162,7 +162,7 @@ function Create() {
 
       // Redirect to home on successful update
       if (response.status === 200) {
-        window.location.href = '/home';
+        window.location.href = '/';
       }
     } catch (error) {
       console.error("Error occurred while updating vacation plan:", error);
@@ -175,7 +175,7 @@ function Create() {
         <div className="flex w-full justify-between">
           <h1 className="text-4xl font-medium text-white pb-10">{isEditing ? 'Edit Plan' : 'Create Plan'}</h1>
           <button type="button" className=" bg-gray-300 p-4 h-10 flex items-center rounded-2xl">
-              <Link to="/home" className="font-medium flex items-center">
+              <Link to="/" className="font-medium flex items-center">
                 <i className="material-icons-outlined">arrow_back</i><span>Back</span>
               </Link>
           </button>
@@ -191,7 +191,7 @@ function Create() {
                 placeholder="Enter the title"
                 className={`w-full p-2 rounded-lg ${!isValid && !titleRef.current?.value && 'border bg-red-100 border-red-500'}`}
                 ref={titleRef}
-                onChange={() => setValid(titleRef.current?.value.trim() !== '')} 
+                onChange={() => setValid(titleRef.current?.value.trim() !== '')}
               />
               {!isValid && !titleRef.current?.value && (
                 <span className="text-red-500 text-sm mt-1">Required field</span>
@@ -205,7 +205,7 @@ function Create() {
                 placeholder="Enter the location"
                 className={`w-full p-2 rounded-lg ${!isValid && !locationRef.current?.value && 'border bg-red-100 border-red-500'}`}
                 ref={locationRef}
-                onChange={() => setValid(locationRef.current?.value.trim() !== '')} 
+                onChange={() => setValid(locationRef.current?.value.trim() !== '')}
               />
                {!isValid && !locationRef.current?.value && (
                 <span className="text-red-500 text-sm mt-1">Required field</span>
@@ -219,7 +219,7 @@ function Create() {
                 placeholder="Enter the description"
                 className={`w-full p-2 rounded-lg ${!isValid && !descriptionRef.current?.value && 'border bg-red-100 border-red-500'}`}
                 ref={descriptionRef}
-                onChange={() => setValid(descriptionRef.current?.value.trim() !== '')} 
+                onChange={() => setValid(descriptionRef.current?.value.trim() !== '')}
               />
                {!isValid && !descriptionRef.current?.value && (
                 <span className="text-red-500 text-sm mt-1">Required field</span>

@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx src/server.ts",
+    "postinstall": "npx prisma generate",
+    "production": "tsx src/server.ts",
     "start": "npm install && npx prisma generate && tsx watch src/server.ts"
   },
   "keywords": [],

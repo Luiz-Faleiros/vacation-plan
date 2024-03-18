@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "back": "cd backend && npm install && npx prisma generate && npm run dev",
-    "front": "cd ../frontend && npm install && npm run dev"
-  },  
+    "front": "cd frontend && npm install && npm run dev"
+  },
   "author": "",
   "license": "ISC"
 }
