@@ -15,7 +15,10 @@ const start = async () => {
     await app.register(cors);
     await app.register(routes);
     try{
-        await app.listen(port)
+        await app.listen(port, () => {
+              console.log(`Example app listening on port ${port}`)
+            }
+        )
     }catch(err){
         process.exit(1)
     }
