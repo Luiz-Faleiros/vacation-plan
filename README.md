@@ -36,4 +36,4 @@ export default {
 
 -COMMAND FOR FRONTEND INITIALIZE: go into the frontend folder and run the command "npm install" and "npm run dev"
 
--OBSERVE IMPORTANT!!!!: DON'T FORGET TO CREATE AN .ENV AND ENTER THE VARIABLE DATABASE_URL="mongodb+srv://dev_luiz:<PASSWORD>@task.oz5pts5.mongodb.net/<your_database_name>?retryWrites=true&w=majority&appName=task"
+-OBSERVE IMPORTANT!!!!: DON'T FORGET TO CREATE AN .ENV AND ENTER THE VARIABLE LIKE DATABASE_URL="mongodb+srv://dev_luiz:<PASSWORD>@task.oz5pts5.mongodb.net/<your_database_name>?retryWrites=true&w=majority&appName=task"
