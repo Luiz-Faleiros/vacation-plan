@@ -32,4 +32,8 @@ export default {
 
 -Components: https://www.figma.com/file/CSpjclGoIEdMBT8Q56AfsA/Untitled?type=design&node-id=0%3A1&mode=design&t=bg7KohmlJT0PZNlb-1
 
--COMMAND FOR INITIALIZE: Run the commands in the rais folder "npm run back" and "npm run front"
+-COMMAND FOR BACKEND INITIALIZE: go into the backend folder and run the command "npm install" then "npx prisma generate" and "npm run dev"
+
+-COMMAND FOR FRONTEND INITIALIZE: go into the frontend folder and run the command "npm install" and "npm run dev"
+
+-OBSERVE IMPORTANT!!!!: DON'T FORGET TO CREATE AN .ENV AND ENTER THE VARIABLE DATABASE_URL="mongodb+srv://dev_luiz:<PASSWORD>@task.oz5pts5.mongodb.net/<your_database_name>?retryWrites=true&w=majority&appName=task"
