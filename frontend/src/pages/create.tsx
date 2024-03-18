@@ -174,7 +174,7 @@ function Create() {
       <main className="my-10 w-full md:max-w-4xl">
         <div className="flex w-full justify-between">
           <h1 className="text-4xl font-medium text-white pb-10">{isEditing ? 'Edit Plan' : 'Create Plan'}</h1>
-          <button className=" bg-gray-300 p-4 h-10 flex items-center rounded-2xl">
+          <button type="button" className=" bg-gray-300 p-4 h-10 flex items-center rounded-2xl">
               <Link to="/home" className="font-medium flex items-center">
                 <i className="material-icons-outlined">arrow_back</i><span>Back</span>
               </Link>
