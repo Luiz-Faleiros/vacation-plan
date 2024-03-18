@@ -1,8 +1,0 @@
-{
-    "version": 2,
-    "buildCommand": "cd backend && npm install && npx prisma generate && npm run dev && cd ../frontend && npm install && npm run dev",
-    "env": {
-      "DATABASE_URL": "mongodb+srv://dev_luiz:luiz142533@task.oz5pts5.mongodb.net/task?retryWrites=true&w=majority&appName=task"
-    }
-  }
-  
