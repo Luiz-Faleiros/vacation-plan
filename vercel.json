@@ -4,10 +4,6 @@
       { "src": "backend/package.json" },
       { "src": "frontend/package.json", "use": "@vercel/vite" }
     ],
-    "routes": [
-      { "src": "/routes", "dest": "backend/$1" },
-      { "src": "/services/api", "dest": "frontend/$1" }
-    ],
     "env": {
       "DATABASE_URL": "mongodb+srv://dev_luiz:luiz142533@task.oz5pts5.mongodb.net/task?retryWrites=true&w=majority&appName=task"
     }
