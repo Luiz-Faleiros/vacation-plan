@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "builds": [
+    "buildCommand": [
       { "src": "backend/package.json" },
       { "src": "frontend/package.json", "use": "@vercel/vite" }
     ],
