@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cd front-end && npm run dev && cd ../back-end && npm run dev"
+    "dev": "cd backend && npm run dev && cd ../frontend && npm run dev"
   },  
   "author": "",
   "license": "ISC"

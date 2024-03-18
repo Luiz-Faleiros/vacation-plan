@@ -32,5 +32,4 @@ export default {
 
 -Components: https://www.figma.com/file/CSpjclGoIEdMBT8Q56AfsA/Untitled?type=design&node-id=0%3A1&mode=design&t=bg7KohmlJT0PZNlb-1
 
--Command for back-end initialize: Go to the backend folder and run 'npm install' and then 'npm run dev'
--Command for front-end initialize: Go to the frontend folder and run 'npm install' and then 'npm run dev'
+-Command for initialize: go to the root of the project and run 'npm run dev'
