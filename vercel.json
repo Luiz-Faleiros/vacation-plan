@@ -1,12 +1,12 @@
 {
     "version": 2,
     "builds": [
-      { "src": "backend/package.json", "use": "@vercel/node" },
-      { "src": "frontend", "use": "@vercel/static-build" }
+      { "src": "backend/package.json" },
+      { "src": "frontend/package.json", "use": "@vercel/vite" }
     ],
     "routes": [
-      { "src": "/api/(.*)", "dest": "backend/$1" },
-      { "src": "/(.*)", "dest": "frontend/$1" }
+      { "src": "/routes", "dest": "backend/$1" },
+      { "src": "/services/api", "dest": "frontend/$1" }
     ],
     "env": {
       "DATABASE_URL": "mongodb+srv://dev_luiz:luiz142533@task.oz5pts5.mongodb.net/task?retryWrites=true&w=majority&appName=task"
