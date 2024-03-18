@@ -2,15 +2,6 @@ import { FormEvent, useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { api } from '../services/api';
 
-interface VacationProps {
-  id: string;
-  title: string;
-  description: string;
-  location: string;
-  participants: string;
-  dateAt: string;
-}
-
 function Create() {
   // Refs for form inputs
   const titleRef = useRef<HTMLInputElement | null>(null);
