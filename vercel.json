@@ -10,12 +10,6 @@
     ],
     "env": {
       "DATABASE_URL": "@your_database_url"
-    },
-    "scripts": {
-      "postinstall": "cd backend && npm install && npx prisma generate",
-      "build": "cd frontend && npm install",
-      "dev": "npm run build && npm run dev",
-      "start": "npm run dev"
     }
   }
   
