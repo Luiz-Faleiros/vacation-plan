@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cd backend && npm install && npx prisma generate && npm run dev && cd ../frontend && npm install && npm run dev"
+    "back": "cd backend && npm install && npx prisma generate && npm run dev",
+    "front": "cd ../frontend && npm install && npm run dev"
   },  
   "author": "",
   "license": "ISC"

@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "backend",
+        "use": "@vercel/node",
+        "command": "npm install && npx prisma generate && npm run dev"
+      },
+      {
+        "src": "frontend",
+        "use": "@vercel/node",
+        "command": "npm install && npm run dev"
+      }
+    ]
+}
