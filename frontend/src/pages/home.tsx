@@ -127,30 +127,37 @@ function Home() {
                     {vacations.map((element) => (
                         <div key={element.id} className="w-full">
                             <article className="bg-white p-2 hover:scale-105 duration-200 rounded-lg">
-                                <p><span className="font-medium">Title:</span> {element.title}</p>
-                                <p><span className="font-medium">Description:</span> {element.description}</p>
-                                <p><span className="font-medium">Location:</span> {element.location}</p>
-                                <p><span className="font-medium">Participants:</span> {element.participants ? element.participants : 'no participants'}</p>
-                                <p><span className="font-medium">Date:</span> {new Date(element.dateAt).toLocaleString()}</p>
-                                <div className="gap-2 flex justify-end">
+                                <div className="w-full flex justify-between items-center p-2">
+                                    <h2 className="font-medium text-2xl flex justify-center"> {element.title}</h2>                                
+                                    <p>{new Date(element.dateAt).toLocaleString()}</p>
+                                </div>
+                                <hr></hr>
+                                <div className="p-2">
+                                    <p><span className="font-medium">Description:</span> {element.description}</p>
+                                    <p><span className="font-medium">Location:</span> {element.location}</p>
+                                    <p><span className="font-medium">Participants:</span> {element.participants ? element.participants : 'no participants'}</p>
+                                </div>
+                                <div className="flex justify-end p-2 gap-2">
                                     <button
-                                    className="bg-blue-500 w-7 h-7 flex items-center justify-center rounded-lg"
-                                    onClick={() => handleExportToPDF(element)}
-                                    title='export to pdf'
+                                        className="w-7 h-7 flex items-center justify-center rounded-lg"
+                                        onClick={() => handleDelete(element.id)}
+                                        title="delete"
                                     >
-                                    <i className="material-icons-outlined text-white">picture_as_pdf</i>
+                                        <i className="material-icons-outlined">delete</i>
                                     </button>
                                     <button
-                                        className="bg-gray-300 w-7 h-7 flex items-center justify-center rounded-lg"
+                                        className="w-7 h-7 flex items-center justify-center rounded-lg"
                                         onClick={() => handleEdit(element.id)}
+                                        title="edit"
                                     >
                                         <i className="material-icons-outlined">edit</i>
                                     </button>
                                     <button
-                                        className="bg-red-500 w-7 h-7 flex items-center justify-center rounded-lg"
-                                        onClick={() => handleDelete(element.id)}
+                                        className="w-7 h-7 flex items-center justify-center rounded-lg"
+                                        onClick={() => handleExportToPDF(element)}
+                                        title='export to pdf'
                                     >
-                                        <i className="material-icons-outlined text-white">delete</i>
+                                        <i className="material-icons-outlined">picture_as_pdf</i>
                                     </button>
                                 </div>
                             </article>

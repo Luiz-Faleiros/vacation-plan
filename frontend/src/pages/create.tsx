@@ -184,7 +184,7 @@ function Create() {
           {/* Grid container */}
           <div className="grid grid-cols-2 gap-4">
             {/* Title input */}
-            <div className="flex flex-col col-span-full">
+            <div className="flex flex-col">
               <label className="font-medium text-white">Title:</label>
               <input
                 type="text"
@@ -194,20 +194,6 @@ function Create() {
                 onChange={() => setValid(titleRef.current?.value.trim() !== '')} 
               />
               {!isValid && !titleRef.current?.value && (
-                <span className="text-red-500 text-sm mt-1">Required field</span>
-              )}
-            </div>
-            {/* Description input */}
-            <div className="flex flex-col">
-              <label className="font-medium text-white">Description:</label>
-              <input
-                type="text"
-                placeholder="Enter the description"
-                className={`w-full p-2 rounded-lg ${!isValid && !descriptionRef.current?.value && 'border bg-red-100 border-red-500'}`}
-                ref={descriptionRef}
-                onChange={() => setValid(descriptionRef.current?.value.trim() !== '')} 
-              />
-               {!isValid && !descriptionRef.current?.value && (
                 <span className="text-red-500 text-sm mt-1">Required field</span>
               )}
             </div>
@@ -222,6 +208,20 @@ function Create() {
                 onChange={() => setValid(locationRef.current?.value.trim() !== '')} 
               />
                {!isValid && !locationRef.current?.value && (
+                <span className="text-red-500 text-sm mt-1">Required field</span>
+              )}
+            </div>
+            {/* Description input */}
+            <div className="flex flex-col  col-span-full">
+              <label className="font-medium text-white">Description:</label>
+              <input
+                type="text"
+                placeholder="Enter the description"
+                className={`w-full p-2 rounded-lg ${!isValid && !descriptionRef.current?.value && 'border bg-red-100 border-red-500'}`}
+                ref={descriptionRef}
+                onChange={() => setValid(descriptionRef.current?.value.trim() !== '')} 
+              />
+               {!isValid && !descriptionRef.current?.value && (
                 <span className="text-red-500 text-sm mt-1">Required field</span>
               )}
             </div>
@@ -252,11 +252,13 @@ function Create() {
           </div>
 
           {/* Submit button */}
-          <input
+          <div className='w-full flex justify-end'>
+            <input
             type="submit"
             value={isEditing ? 'Update Plan' : 'Create Plan'}
-            className="cursor-pointer rounded-3xl w-full p-2 mt-6 bg-green-500 font-medium"
+            className="cursor-pointer rounded-2xl p-2 mt-6 bg-green-500 font-medium"
           />
+          </div>
         </form>
       </main>
     </div>
