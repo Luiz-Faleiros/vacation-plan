@@ -28,3 +28,9 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+-Components: https://www.figma.com/file/CSpjclGoIEdMBT8Q56AfsA/Untitled?type=design&node-id=0%3A1&mode=design&t=bg7KohmlJT0PZNlb-1
+
+-Command for back-end initialize: Go to the backend folder and run 'npm install' and then 'npm run dev'
+-Command for front-end initialize: Go to the frontend folder and run 'npm install' and then 'npm run dev'

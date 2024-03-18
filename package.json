@@ -1,0 +1,11 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd front-end && npm run dev && cd ../back-end && npm run dev"
+  },  
+  "author": "",
+  "license": "ISC"
+}
