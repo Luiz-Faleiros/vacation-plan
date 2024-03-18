@@ -1,12 +1,21 @@
 {
+    "version": 2,
     "builds": [
-      {
-        "src": "backend",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "frontend",
-        "use": "@vercel/node"
-      }
-    ]
+      { "src": "backend/package.json", "use": "@vercel/node" },
+      { "src": "frontend", "use": "@vercel/static-build" }
+    ],
+    "routes": [
+      { "src": "/api/(.*)", "dest": "backend/$1" },
+      { "src": "/(.*)", "dest": "frontend/$1" }
+    ],
+    "env": {
+      "DATABASE_URL": "@your_database_url"
+    },
+    "scripts": {
+      "postinstall": "cd backend && npm install && npx prisma generate",
+      "build": "cd frontend && npm install",
+      "dev": "npm run build && npm run dev",
+      "start": "npm run dev"
+    }
   }
+  
