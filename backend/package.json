@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "start": "npm install && npx prisma generate && npm run dev",
   },
   "keywords": [],
   "author": "",
