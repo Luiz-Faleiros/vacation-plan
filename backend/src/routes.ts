@@ -94,6 +94,7 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
       body: {
         type: 'object',
         properties: {
+          id: { type: 'string' },
           title: { type: 'string' },
           description: { type: 'string' },
           location: { type: 'string' },
@@ -101,9 +102,6 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
           dateAt: { type: 'string', format: 'date' }
         },
         required: ['id']
-      },
-      querystring: {
-        id: { type: 'string' }
       },
       response: {
         200: {
